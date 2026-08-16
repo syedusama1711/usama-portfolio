@@ -270,6 +270,8 @@
   .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);perspective:1000px;}
   @media(max-width:860px){.pgrid{grid-template-columns:repeat(2,1fr);}}
   @media(max-width:560px){.pgrid{grid-template-columns:1fr;}}
+  .pcard:last-child{grid-column:1 / -1;}
+  @media(max-width:560px){.pcard:last-child{grid-column:1;}}
   .pcard{
     background:var(--surface);padding:32px 28px;min-height:220px;
     display:flex;flex-direction:column;justify-content:space-between;
@@ -629,7 +631,7 @@
 <footer>
   <div class="wrap footwrap">
     <span>© 2026 Syed Usama Zahid — Odoo Developer, Islamabad</span>
-    <span>Built with GSAP</span>
+    <!-- <span>Built with GSAP</span> -->
   </div>
 </footer>
 
